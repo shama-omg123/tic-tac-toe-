@@ -2,7 +2,8 @@ class TicTacToe:
     def __init__(self, boardsize=3):
         self.boardsize = boardsize
         self.board = [[' ' for _ in range(self.boardsize)] for _ in range(self.boardsize)]
-        self.current_player = 'X'
+        self.current_player = 'Y'
+        #Sheru made this change
     
     def print_board(self):
         print("  " + "   ".join(map(str, range(self.boardsize))))
